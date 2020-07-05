@@ -7,6 +7,6 @@ Thumbs.db
 .sass-cache/
 .tmp/
 .vscode/
-
+node_modules/
 src/
 data/

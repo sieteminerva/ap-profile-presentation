@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "pugtohtml": "pug -P -o ./ src/pug-markup/index.pug"
+    "pugtohtml": "pug -P -o ./ src/pug-markup/index.pug",
+    "copy": "@powershell Copy-Item 'node_modules/reveal.js/dist/**' -Recurse 'dist/lib'"
   },
   "author": "YMGH",
   "license": "ISC",
