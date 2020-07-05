@@ -1,0 +1,12 @@
+npm-debug.log*
+$RECYCLE.BIN/
+.DS_Store
+Thumbs.db
+.idea/
+.sourcemaps/
+.sass-cache/
+.tmp/
+.vscode/
+
+src/
+data/
