@@ -11,6 +11,7 @@
   "author": "YMGH",
   "license": "ISC",
   "dependencies": {
-    "reveal.js": "^4.0.2"
+    "reveal.js": "^4.0.2",
+    "revealjs-animated": "^1.2.2"
   }
 }
