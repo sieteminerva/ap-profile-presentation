@@ -88,13 +88,17 @@ a.link:hover:after {
 
 .text {
   color: #633C20 !important;
-  font-size: 1.75rem; }
+  font-size: 1.75rem;
+  text-align: justify; }
 
 .title {
   color: #A38528 !important;
   font-size: 3rem;
   font-weight: 600;
   text-transform: uppercase; }
+
+li {
+  margin-bottom: 15px; }
 
 img {
   width: 400px; }
