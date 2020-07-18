@@ -1,10 +1,4 @@
 @charset "UTF-8";
-:root {
-  --main-font: 'Open Sans', 'sans-serif';
-  --animate-duration: 300ms;
-  --animate-delay: 400ms;
-  --animate-transition-duration: 250ms; }
-
 /* open-sans-300 - latin */
 @font-face {
   font-family: 'Open Sans';
@@ -104,6 +98,12 @@
   /* IE9 Compat Modes */
   src: local("Open Sans ExtraBold Italic"), local("OpenSans-ExtraBoldItalic"), url("../assets/fonts/open-sans-v17-latin-800italic.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/open-sans-v17-latin-800italic.woff2") format("woff2"), url("../assets/fonts/open-sans-v17-latin-800italic.woff") format("woff"), url("../assets/fonts/open-sans-v17-latin-800italic.ttf") format("truetype"), url("../assets/fonts/open-sans-v17-latin-800italic.svg#OpenSans") format("svg");
   /* Legacy iOS */ }
+
+:root {
+  --main-font: 'Open Sans', 'sans-serif';
+  --animate-duration: 300ms;
+  --animate-delay: 400ms;
+  --animate-transition-duration: 250ms; }
 
 /* Utility */
 .align-left {
