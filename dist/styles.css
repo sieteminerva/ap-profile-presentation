@@ -227,6 +227,10 @@ li {
   color: #633C20;
   font-size: 1rem; }
 
+body > * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
 section {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -259,6 +263,9 @@ section.row, .row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
@@ -299,6 +306,59 @@ section.row, .row {
     padding: 10px; }
     .column.description ul.text li {
       font-size: 1.5rem; }
+
+.profile-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  max-width: 230px;
+  max-height: 300px;
+  text-align: center; }
+  .profile-card .profile-picture {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: block;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    overflow: hidden;
+    position: relative;
+    border: 3px solid #A38528;
+    border-radius: 25px;
+    margin-bottom: 16px; }
+    .profile-card .profile-picture img {
+      vertical-align: middle;
+      position: relative;
+      height: 100%;
+      width: 100%;
+      -o-object-fit: cover;
+      object-fit: cover;
+      -o-object-position: 60% 0%;
+      object-position: 60% 0%;
+      margin: 0 auto; }
+  .profile-card .lawyer-name {
+    font-size: .75rem;
+    margin-bottom: 8px;
+    white-space: nowrap;
+    color: #46411B;
+    text-transform: uppercase;
+    font-weight: bolder; }
+  .profile-card .jobtitle {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #A38528;
+    text-transform: capitalize;
+    font-style: italic; }
 
 /* Opening
  */
