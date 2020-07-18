@@ -6,25 +6,35 @@ function setSlideTitle(index) {
     case 0:
       title = 'Cover'
       break;
-  
+
     default:
       break;
   }
 }
 
 Reveal.initialize({
+  transition: 'convex',
+  display: 'flex',
+  center: false,
+  controlsLayout: 'edges',
+  slideNumber: "h/v",
+  hash: true,
+  mouseWheel: true,
   // Other configurations
-  dependencies: [
-    // Other plugins
-    {
-      src: './dist/lib/revealjs-animated.js',
-      async: true
-    }
-  ]
+  plugins: [Appearance],
+  appearance: {
+    baseclass: 'animated',
+    // Use a specific class for the visible state.
+    visibleclass: 'in',
+    // Change this if you want to see the shown elements if you go back
+    hideagain: true,
+    // Base time between appearances
+    delay: 300
+  }
 });
-Reveal.configure({ mouseWheel: true, slideNumber: true,});
 
 
 // Reveal.on('slidechanged', event => {
 //   console.log(event);
 // })
+
