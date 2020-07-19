@@ -301,6 +301,11 @@ a.link:hover:after {
   width: 100%;
   left: 0; }
 
+a.link-article {
+  margin-left: 8px;
+  font-size: small;
+  text-decoration: none; }
+
 li {
   margin-bottom: 15px; }
 
