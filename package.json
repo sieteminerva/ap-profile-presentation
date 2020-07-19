@@ -5,15 +5,22 @@
   "main": "index.js",
   "scripts": {
     "compile:pug": "pug -P -o ./ src/pug-markup/index.pug",
-    "copy:lib": "@powershell Copy-Item 'node_modules/reveal.js/dist/**' -Recurse 'dist/lib'",
-    "watch:pug": "pug -p -w src/pug-markup"
+    "compile:sass": "sass src/styles/styles.scss dist/styles.css",
+    "wincopy:reveal:css": "@powershell Copy-Item 'node_modules/reveal.js/dist/reveal.js' 'assets/lib'",
+    "wincopy:reveal:js": "@powershell Copy-Item 'node_modules/reveal.js/dist/reveal.css' 'assets/lib'",
+    "wincopy:reset:css": "@powershell Copy-Item 'node_modules/reveal.js/dist/reset.css' 'assets/lib'",
+    "wincopy:appearance:css": "@powershell Copy-Item 'node_modules/reveal.js-appearance/plugin/appearance/appearance.css' 'assets/lib'",
+    "wincopy:appearance:js": "@powershell Copy-Item 'node_modules/reveal.js-appearance/plugin/appearance/appearance.js' 'assets/lib'",
+    "wincopy:animate": "@powershell Copy-Item 'node_modules/animate.css/animate.css' 'assets/lib'",
+    "wincopy:lib": "npm run wincopy:reveal:js && npm run wincopy:reveal:css && npm run wincopy:reset:css && npm run wincopy:appearance:css && npm run wincopy:appearance:js && npm run wincopy:animate",
+    "watch:pug": "pug -p -w src/pug-markup",
+    "build": "npm run wincopy:lib && npm run compile:pug && npm run compile:sass"
   },
   "author": "YMGH",
   "license": "ISC",
   "dependencies": {
     "animate.css": "^4.1.0",
     "reveal.js": "^4.0.2",
-    "reveal.js-appearance": "^1.0.7",
-    "revealjs-animated": "^1.2.2"
+    "reveal.js-appearance": "^1.0.7"
   }
 }
